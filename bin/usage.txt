@@ -1,0 +1,7 @@
+core-get-reviewers - Get reviewers that have signed off on node core PR
+
+  usage: core-get-reviewers [options]
+
+  options:
+    -h, --help                    show help and usage
+    -v, --version                 show version

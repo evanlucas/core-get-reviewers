@@ -1,0 +1,24 @@
+{
+  "name": "core-get-reviewers",
+  "version": "1.0.0",
+  "description": "Get reviewers that have signed off on node core PR",
+  "main": "index.js",
+  "dependencies": {
+    "github": "~0.2.4",
+    "help": "~2.1.1"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "bin": {
+    "core-get-reviewers": "./bin/cmd.js"
+  },
+  "author": "Evan Lucas <evanlucas@me.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanlucas/core-get-reviewers"
+  },
+  "homepage": "https://github.com/evanlucas/core-get-reviewers",
+  "bugs": {
+    "url": "https://github.com/evanlucas/core-get-reviewers/issues"
+  }
+}
