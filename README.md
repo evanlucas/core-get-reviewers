@@ -6,7 +6,7 @@ Get reviewers that have signed off on node core PR
 ## Install
 
 ```bash
-$ npm install [-g]core-get-reviewers
+$ npm install [-g] core-get-reviewers
 ```
 
 
