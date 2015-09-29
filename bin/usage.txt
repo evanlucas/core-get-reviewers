@@ -1,7 +1,16 @@
 core-get-reviewers - Get reviewers that have signed off on node core PR
 
-  usage: core-get-reviewers [options]
+  usage: core-get-reviewers [options] <PR Number>
 
   options:
     -h, --help                    show help and usage
     -v, --version                 show version
+
+  example:
+
+    $ core-get-reviewers 3102
+
+      PR-URL: https://github.com/nodejs/node/pull/3102
+      Reviewed-By: XXX
+      Reviewed-By: XXX
+      Reviewed-By: XXX
