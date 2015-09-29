@@ -8,11 +8,17 @@ const args = process.argv.splice(2)
     , path = require('path')
     , home = process.env.HOME
     , usage = require('help')()
+    , pkg = require('../package')
 
 if (!args.length) return usage(1)
 
 if (args[0] === 'help' || args[0] === '-h' || args[0] === '--help') {
   return usage()
+}
+
+if (args[0] === 'version' || args[0] === 'v' || args[0] === '--version') {
+  console.log('core-get-reviewers', `v${pkg.version}`)
+  return
 }
 
 const token = readToken()
