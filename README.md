@@ -1,5 +1,7 @@
 # core-get-reviewers
 
+[![Build Status](https://travis-ci.org/evanlucas/core-get-reviewers.svg)](https://travis-ci.org/evanlucas/core-get-reviewers)
+[![Coverage Status](https://coveralls.io/repos/evanlucas/core-get-reviewers/badge.svg?branch=master&service=github)](https://coveralls.io/github/evanlucas/core-get-reviewers?branch=master)
 
 Get reviewers that have signed off on node core PR
 
