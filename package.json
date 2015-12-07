@@ -1,6 +1,6 @@
 {
   "name": "core-get-reviewers",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Get reviewers that have signed off on node core PR",
   "main": "index.js",
   "scripts": {
