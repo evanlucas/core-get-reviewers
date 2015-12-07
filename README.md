@@ -28,6 +28,11 @@ cgr.fetchPR(3102, function(err, obj) {
   // => Reviewed-By: XXX
   // => Reviewed-By: XXX
 })
+
+// or to just get a reviewer from a username
+// note: case is sensitive here
+cgr.getReviewer('evanlucas')
+// => 'Evan Lucas <evanlucas@me.com>'
 ```
 
 ## Author

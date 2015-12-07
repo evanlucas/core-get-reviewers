@@ -83,3 +83,13 @@ test('generate with invalid username', function(t) {
     ])
   }, /Cannot find email for reviewer evan/)
 })
+
+test('getReviewer', function(t) {
+  t.plan(2)
+  var cgr = CGR({
+    token: '1234'
+  })
+
+  t.notOk(cgr.getReviewer('biscuits'))
+  t.equal(cgr.getReviewer('evanlucas'), 'Evan Lucas <evanlucas@me.com>')
+})
