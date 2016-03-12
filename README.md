@@ -37,6 +37,18 @@ cgr.getReviewer('evanlucas')
 // => 'Evan Lucas <evanlucas@me.com>'
 ```
 
+## CLI Usage
+
+```
+$ core-get-reviewers 3102
+```
+
+## Script to check for added collaborators
+
+```
+$ npm run check
+```
+
 ## Author
 
 Evan Lucas

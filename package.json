@@ -4,7 +4,8 @@
   "description": "Get reviewers that have signed off on node core PR",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js --cov"
+    "test": "tap test/*.js --cov",
+    "check": "./tools/update_check.js"
   },
   "dependencies": {
     "ghauth": "^3.2.0",
