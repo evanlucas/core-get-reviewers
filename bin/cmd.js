@@ -27,6 +27,7 @@ if (args[0] === 'version' || args[0] === 'v' || args[0] === '--version') {
 }
 
 ghauth(authOptions, function (err, authData) {
+  if (err) throw err
   var cgr = GetReviewers({
     token: authData.token
   })
