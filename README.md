@@ -11,6 +11,8 @@ Get reviewers that have signed off on node core PR
 $ npm install [-g] core-get-reviewers
 ```
 
+**Note: requires Node.js v4+**
+
 ## Usage
 
 ```js
