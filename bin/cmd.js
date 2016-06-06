@@ -15,6 +15,8 @@ const args = process.argv.splice(2)
       , scopes: ['repo']
     }
 
+let nodePrivate = false;
+
 if (!args.length) return usage(1)
 
 if (args[0] === 'help' || args[0] === '-h' || args[0] === '--help') {
@@ -26,10 +28,16 @@ if (args[0] === 'version' || args[0] === 'v' || args[0] === '--version') {
   return
 }
 
+if (args[0] === '--private' || args[0] === '-p') {
+  nodePrivate = true;
+  args[0] = args[1];
+}
+
 ghauth(authOptions, function (err, authData) {
   if (err) throw err
   var cgr = GetReviewers({
-    token: authData.token
+    token: authData.token,
+    nodePrivate: nodePrivate
   })
 
   cgr.fetchPR(args[0], function(err, out) {
